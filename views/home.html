@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>savtrack</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    <script type="text/javascript" src="/javascripts/jquery-1.12.1.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+    <script type="text/javascript" src="/javascripts/home.js"></script>
+    <!-- <script src="/audiojs/audio.min.js"></script>-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	 <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+<section class="col" id="top-15">
+<ol class = "songs_list">
+<li><input type = "button" id = "1" class="song" value = "FifthHarmony.mp3"></li>
+<li><input type = "button" id = "2" class="song" value = "Ain't Enough.mp3"></li>
+<li><input type = "button" id = "3" class="song" value = "Angel.mp3"></li>
+<li><input type = "button" id = "4" class="song" value = "Dude (Looks Like a Lady).mp3"></li>
+<li><input type = "button" id = "5" class="song" value = "Rag Doll.mp3"></li>
+</ol>
+</section>
+  
+  
+
+  <div class="container">
+    <div class="row">
+       <div class="col-md-6 col-md-offset-3">
+          <div id="postTweets" class="div-table">
+              <!-- <audio id="audio_src"  class="player_audio" src="" preload="auto" />-->
+			  <audio controls  id="audio_src">
+                 <source class="player_audio" src="">
+                   Your browser does not support the audio element.
+               </audio>
+          </div>
+
+
+       </div>
+    </div>
+  </div>
+
+  <!-- chat aplication code -->
+   <div class = "chat_window">
+  
+    <ul id="messages"></ul>
+    <form action="">
+      <input id="m" autocomplete="off" /><button id ="send"><i class="material-icons prefix">message</i></button>
+    </form>
+      </div>
+    
+</body>
+</html>
